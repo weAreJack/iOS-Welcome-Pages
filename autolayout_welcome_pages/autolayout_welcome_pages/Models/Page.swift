@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct PageModel {
+struct Page {
     let image : UIImage
     let headerText : String
     let descriptionText : String

@@ -14,9 +14,9 @@
 		A0C557EE2312FB9600451B49 /* SwipingCollectionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C557ED2312FB9600451B49 /* SwipingCollectionsController.swift */; };
 		A0C557F02312FF1700451B49 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C557EF2312FF1700451B49 /* PageCell.swift */; };
 		A0C557F2231305B900451B49 /* BottomControlls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C557F1231305B900451B49 /* BottomControlls.swift */; };
-		A0C557F42313084A00451B49 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C557F32313084A00451B49 /* PageModel.swift */; };
+		A0C557F42313084A00451B49 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C557F32313084A00451B49 /* Page.swift */; };
 		A0C557F823140C8E00451B49 /* SwipingCollectionsController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C557F723140C8E00451B49 /* SwipingCollectionsController+CollectionView.swift */; };
-		A0C557FA231436FD00451B49 /* SwipingCollectionsController+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C557F9231436FD00451B49 /* SwipingCollectionsController+Animations.swift */; };
+		A0C557FA231436FD00451B49 /* SwipingCollectionsController+Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C557F9231436FD00451B49 /* SwipingCollectionsController+Handlers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +50,9 @@
 		A0C557ED2312FB9600451B49 /* SwipingCollectionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingCollectionsController.swift; sourceTree = "<group>"; };
 		A0C557EF2312FF1700451B49 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		A0C557F1231305B900451B49 /* BottomControlls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomControlls.swift; sourceTree = "<group>"; };
-		A0C557F32313084A00451B49 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		A0C557F32313084A00451B49 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		A0C557F723140C8E00451B49 /* SwipingCollectionsController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwipingCollectionsController+CollectionView.swift"; sourceTree = "<group>"; };
-		A0C557F9231436FD00451B49 /* SwipingCollectionsController+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwipingCollectionsController+Animations.swift"; sourceTree = "<group>"; };
+		A0C557F9231436FD00451B49 /* SwipingCollectionsController+Handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwipingCollectionsController+Handlers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +134,7 @@
 		A0C557E92312EB0C00451B49 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A0C557F32313084A00451B49 /* PageModel.swift */,
+				A0C557F32313084A00451B49 /* Page.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -153,7 +153,7 @@
 			children = (
 				A0C557ED2312FB9600451B49 /* SwipingCollectionsController.swift */,
 				A0C557F723140C8E00451B49 /* SwipingCollectionsController+CollectionView.swift */,
-				A0C557F9231436FD00451B49 /* SwipingCollectionsController+Animations.swift */,
+				A0C557F9231436FD00451B49 /* SwipingCollectionsController+Handlers.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -288,9 +288,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C557F823140C8E00451B49 /* SwipingCollectionsController+CollectionView.swift in Sources */,
-				A0C557FA231436FD00451B49 /* SwipingCollectionsController+Animations.swift in Sources */,
+				A0C557FA231436FD00451B49 /* SwipingCollectionsController+Handlers.swift in Sources */,
 				A0C557F2231305B900451B49 /* BottomControlls.swift in Sources */,
-				A0C557F42313084A00451B49 /* PageModel.swift in Sources */,
+				A0C557F42313084A00451B49 /* Page.swift in Sources */,
 				A0C557EE2312FB9600451B49 /* SwipingCollectionsController.swift in Sources */,
 				A0C557F02312FF1700451B49 /* PageCell.swift in Sources */,
 				A0C557BC2312EAB400451B49 /* AppDelegate.swift in Sources */,

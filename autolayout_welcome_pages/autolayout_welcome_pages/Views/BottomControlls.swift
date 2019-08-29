@@ -12,19 +12,8 @@ class BottomControlls : UIView {
     
     // MARK: - Properties
     
-    let previousButton : UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Prev", for: .normal)
-        button.setTitleColor(.gray, for: .normal)
-        return button
-    }()
-    
-    let nextButton : UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Next", for: .normal)
-        button.setTitleColor(.gray, for: .normal)
-        return button
-    }()
+    let previousButton = setupButton(titleText: "Prev")
+    let nextButton = setupButton(titleText: "Next")
     
     let pageControll : UIPageControl = {
         let pageControll = UIPageControl()
@@ -45,11 +34,9 @@ class BottomControlls : UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     // MARK: - Handlers
     
     fileprivate func setupUI() {
-        
         let stackView = UIStackView(arrangedSubviews: [previousButton, pageControll, nextButton])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.distribution = .fillEqually
@@ -62,7 +49,13 @@ class BottomControlls : UIView {
         stackView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         
         translatesAutoresizingMaskIntoConstraints = false
-        
+    }
+    
+    static func setupButton(titleText: String) -> UIButton {
+        let button = UIButton(type: .system)
+        button.setTitle(titleText, for: .normal)
+        button.setTitleColor(.gray, for: .normal)
+        return button
     }
     
 }

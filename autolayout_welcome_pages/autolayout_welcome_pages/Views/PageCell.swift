@@ -12,7 +12,7 @@ import UIKit
     
     // MARK: - Properties
     
-    var page : PageModel? {
+    var page : Page? {
         didSet {
             guard let page = page else {return}
             imageView.image = page.image
@@ -54,7 +54,6 @@ import UIKit
     // MARK: - Handlers
     
     fileprivate func setupUI() {
-        
         backgroundColor = .white
         let imageContainerView = UIView()
         
@@ -78,7 +77,6 @@ import UIKit
         descriptionTextView.topAnchor.constraint(equalTo: imageContainerView.bottomAnchor, constant: 16).isActive = true
         descriptionTextView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
         descriptionTextView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -16).isActive = true
-        
     }
     
  }
