@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0091FF3231C50F1005845E3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0091FF2231C50F1005845E3 /* UIColorExtension.swift */; };
 		A0C557BC2312EAB400451B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C557BB2312EAB400451B49 /* AppDelegate.swift */; };
 		A0C557C32312EAB400451B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C557C22312EAB400451B49 /* Assets.xcassets */; };
 		A0C557D12312EAB400451B49 /* autolayout_welcome_pagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C557D02312EAB400451B49 /* autolayout_welcome_pagesTests.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0091FF2231C50F1005845E3 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		A0C557B82312EAB400451B49 /* autolayout_welcome_pages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autolayout_welcome_pages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C557BB2312EAB400451B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C557C22312EAB400451B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0091FF1231C50E3005845E3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0091FF2231C50F1005845E3 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A0C557AF2312EAB300451B49 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		A0C557BA2312EAB400451B49 /* autolayout_welcome_pages */ = {
 			isa = PBXGroup;
 			children = (
+				A0091FF1231C50E3005845E3 /* Extensions */,
 				A0C557EB2312EB1800451B49 /* Controllers */,
 				A0C557EA2312EB1300451B49 /* Views */,
 				A0C557E92312EB0C00451B49 /* Models */,
@@ -290,6 +301,7 @@
 				A0C557F823140C8E00451B49 /* SwipingCollectionsController+CollectionView.swift in Sources */,
 				A0C557FA231436FD00451B49 /* SwipingCollectionsController+Handlers.swift in Sources */,
 				A0C557F2231305B900451B49 /* BottomControlls.swift in Sources */,
+				A0091FF3231C50F1005845E3 /* UIColorExtension.swift in Sources */,
 				A0C557F42313084A00451B49 /* Page.swift in Sources */,
 				A0C557EE2312FB9600451B49 /* SwipingCollectionsController.swift in Sources */,
 				A0C557F02312FF1700451B49 /* PageCell.swift in Sources */,

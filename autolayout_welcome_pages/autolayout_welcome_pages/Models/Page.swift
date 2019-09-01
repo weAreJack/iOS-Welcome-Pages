@@ -10,6 +10,7 @@ import UIKit
 
 struct Page {
     let image : UIImage
+    let imageColour : UIColor
     let headerText : String
     let descriptionText : String
 }

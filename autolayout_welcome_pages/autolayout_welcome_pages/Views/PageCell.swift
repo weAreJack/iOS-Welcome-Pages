@@ -15,7 +15,9 @@ import UIKit
     var page : Page? {
         didSet {
             guard let page = page else {return}
+            
             imageView.image = page.image
+            imageView.tintColor = page.imageColour
             
             let attributedText = NSMutableAttributedString(string: page.headerText, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)])
             attributedText.append(NSAttributedString(string: "\n\n\n\(page.descriptionText)", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18)]))
@@ -26,7 +28,7 @@ import UIKit
     }
     
     let imageView : UIImageView = {
-        let imageView = UIImageView(image: #imageLiteral(resourceName: "image_1"))
+        let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         return imageView
@@ -75,8 +77,8 @@ import UIKit
         
         descriptionTextView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         descriptionTextView.topAnchor.constraint(equalTo: imageContainerView.bottomAnchor, constant: 16).isActive = true
-        descriptionTextView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
-        descriptionTextView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -16).isActive = true
+        descriptionTextView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 40).isActive = true
+        descriptionTextView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -40).isActive = true
     }
     
  }
