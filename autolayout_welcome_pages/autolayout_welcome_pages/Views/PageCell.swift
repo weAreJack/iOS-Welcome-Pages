@@ -77,8 +77,8 @@ import UIKit
         
         descriptionTextView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         descriptionTextView.topAnchor.constraint(equalTo: imageContainerView.bottomAnchor, constant: 16).isActive = true
-        descriptionTextView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 40).isActive = true
-        descriptionTextView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -40).isActive = true
+        descriptionTextView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40).isActive = true
+        descriptionTextView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40).isActive = true
     }
     
  }

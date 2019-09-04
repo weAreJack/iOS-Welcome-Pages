@@ -15,6 +15,7 @@ extension SwipingCollectionsController {
         collectionView.register(PageCell.self, forCellWithReuseIdentifier: "cell")
         collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
+        collectionView.contentInsetAdjustmentBehavior = .never
         
         view.addSubview(bottomControlls)
         let layoutGuide = view.safeAreaLayoutGuide
@@ -61,7 +62,6 @@ extension SwipingCollectionsController {
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         coordinator.animate(alongsideTransition: { (_) in
-            self.collectionViewLayout.invalidateLayout()
             let indexPath = IndexPath(item: self.bottomControlls.pageControll.currentPage, section: 0)
             self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         })
