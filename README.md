@@ -10,4 +10,4 @@ This project demonstrates how to produce a set of swipeable welcome pages for in
 <img src="https://github.com/jack-a-smith/iOS_collectionView_autolayout_welcome_pages/blob/master/readme_images/landscape.png" height="200">
 </p>
 
-This project is developed programmatically, without the use of storyboards. Uses an MVC architecture, and incorporates some basic keyframed animations for adding more exciting visal elements to the user experience.
+This project is developed programmatically, without the use of storyboards. Uses the MVC design pattern, and incorporates some basic keyframed animations for adding more exciting visal elements to the user experience.
